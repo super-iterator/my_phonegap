@@ -54,22 +54,22 @@ var app = {
         //navigator.notification.alert(window.plugins.battery-status.status() ); // didnt work
         //window.notification.alert('Time to charge it up!',function() {},'Low Batter','OK'); // didnt work
 
-        // PhoneCallTrap.onCall(function(state) {
-        //     console.log("CHANGE STATE: " + state);
-        //
-        //     switch (state) {
-        //         case "RINGING":
-        //             console.log("Phone is ringing");
-        //             break;
-        //         case "OFFHOOK":
-        //             console.log("Phone is off-hook");
-        //             break;
-        //
-        //         case "IDLE":
-        //             console.log("Phone is idle");
-        //             break;
-        //     }
-        // });
+        PhoneCallTrap.onCall(function(state) {
+            console.log("CHANGE STATE: " + state);
+
+            switch (state) {
+                case "RINGING":
+                    console.log("Phone is ringing");
+                    break;
+                case "OFFHOOK":
+                    console.log("Phone is off-hook");
+                    break;
+
+                case "IDLE":
+                    console.log("Phone is idle");
+                    break;
+            }
+        });
 
 
     },
