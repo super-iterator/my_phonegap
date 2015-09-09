@@ -33,7 +33,7 @@ var app = {
         window.addEventListener("batterylow", app.batteryStatusChange, false);
         window.addEventListener("batterycritical", app.batteryStatusChange, false);
 
-        document.addEventListener('pause', app.pauseHandler, false);
+        // document.addEventListener('pause', app.pauseHandler, false);
         // document.addEventListener('resume', app.resumeHandler, false);
         // document.addEventListener('online', app.onlineHandler, false);
         // document.addEventListener('offline', app.offlineHandler, false);
@@ -59,14 +59,14 @@ var app = {
 
             switch (state) {
                 case "RINGING":
-                    console.log("Phone is ringing");
+                    alert("Phone is ringing: ");
                     break;
                 case "OFFHOOK":
-                    console.log("Phone is off-hook");
+                    alert("Phone is off-hook");
                     break;
 
                 case "IDLE":
-                    console.log("Phone is idle");
+                    alert("Phone is idle");
                     break;
             }
         });
