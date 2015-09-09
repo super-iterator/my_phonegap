@@ -29,6 +29,8 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
+
+
         window.addEventListener("batterystatus",app.batteryStatusChange,false);
         window.addEventListener("batterylow", app.batteryStatusChange, false);
         window.addEventListener("batterycritical", app.batteryStatusChange, false);
@@ -70,6 +72,7 @@ var app = {
                     break;
             }
         });
+
 
 
     },
